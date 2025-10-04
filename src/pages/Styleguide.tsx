@@ -9,7 +9,7 @@ const Styleguide: React.FC = () => {
 
   return (
     <div className="flex">
-      <Sidebar companies={companies} selectedCompanyId={selected} onSelect={setSelected} />
+      <Sidebar companies={companies} selectedCompanyId={selected} onSelect={setSelected} children={undefined} />
       <main className="flex-1 overflow-y-auto bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-6">
         <CompanyStyle company={company} />
       </main>
